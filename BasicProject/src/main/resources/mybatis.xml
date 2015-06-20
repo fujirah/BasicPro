@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--别名-->
+    <typeAliases>
+        <!--entities-->
+        <typeAlias alias="DemonEntity" type="org.swust.entity.DemonEntity"/>
+        <typeAlias alias="FeeSolution" type="org.swust.entity.FeeSolutionEntity"/>
+        <typeAlias alias="FeeUser" type="org.swust.entity.FeeUserEntity"/>
+        <typeAlias alias="FeeDetail" type="org.swust.entity.FeeDetailEntity"/>
+        <typeAlias alias="FeeCost" type="org.swust.entity.FeeCostEntity"/>
+        <!--params-->
+        <typeAlias alias="FeeDetailParam" type="org.swust.params.FeeDetailParam"/>
+        <typeAlias alias="FeeUserParam" type="org.swust.params.FeeUserParam"/>
+        <typeAlias alias="FeeSolutionParam" type="org.swust.params.FeeSolutionParam"/>
+        <typeAlias alias="FeeCostParam" type="org.swust.params.FeeCostParam"/>
+    </typeAliases>
+    <!--mapper-->
+    <mappers>
+        <mapper resource="mapper/demon.xml"/>
+        <mapper resource="mapper/fee_detail_mapper.xml"/>
+        <mapper resource="mapper/fee_solution_mapper.xml"/>
+        <mapper resource="mapper/fee_user_mapper.xml"/>
+        <mapper resource="mapper/fee_cost_mapper.xml"/>
+    </mappers>
+</configuration>
